@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <Button
+            android:id="@+id/b_choose_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/action_choose_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Choose Ins-->
+        <include
+            android:id="@+id/i_choose_image"
+            layout="@layout/choose_image_inc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/b_process"
+            app:layout_constraintEnd_toEndOf="@id/b_choose_image"
+            app:layout_constraintStart_toStartOf="@id/b_choose_image"
+            app:layout_constraintTop_toBottomOf="@id/b_choose_image" />
+
+
+        <ImageView
+            android:id="@+id/iv_input"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/b_choose_image"
+            app:layout_constraintStart_toStartOf="@id/b_choose_image"
+            app:layout_constraintTop_toBottomOf="@id/b_choose_image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_input_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/iv_input"
+            app:layout_constraintStart_toStartOf="@id/iv_input"
+            app:layout_constraintTop_toBottomOf="@id/iv_input" />
+
+        <Button
+            android:id="@+id/b_process"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/action_process"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/tv_input_details"
+            app:layout_constraintStart_toStartOf="@id/tv_input_details"
+            app:layout_constraintTop_toBottomOf="@id/tv_input_details" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/b_process"
+            app:layout_constraintStart_toStartOf="@id/b_process"
+            app:layout_constraintTop_toBottomOf="@id/b_process"
+            tools:text="@tools:sample/lorem" />
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/tv_progress"
+            app:layout_constraintStart_toStartOf="@id/tv_progress"
+            app:layout_constraintTop_toBottomOf="@id/tv_progress" />
+
+        <ImageView
+            android:id="@+id/iv_output"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="@id/pb_progress"
+            app:layout_constraintStart_toStartOf="@id/pb_progress"
+            app:layout_constraintTop_toBottomOf="@id/pb_progress"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

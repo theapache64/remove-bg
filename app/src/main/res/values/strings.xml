@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">remove-bg-example</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_process">PROCESS</string>
+    <string name="action_choose_image">CHOOSE IMAGE</string>
+    <string name="message_tap_to_choose_image">Tap to choose image</string>
+    <string name="error_no_image_selected">No image selected</string>
+    <string name="title_permission">Permission</string>
+    <string name="message_permission">To save processed image, we need access to your external storage</string>
+    <string name="action_ok">OK</string>
+    <string name="error_permission">Can\'t process image without storage permission</string>
+    <string name="title_error">Error</string>
+    <string name="status_uploading">Uploading..</string>
+    <string name="status_processing">Processing…</string>
+    <string name="error_output_not_saved">Output image not saved</string>
+</resources>
