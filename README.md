@@ -6,7 +6,7 @@ Remove.bg is a free service to remove the background of any photo. It works 100%
 ## Installation
 
 ```gradle
-implementation 'com.theapache64.removebg:removebg:0.0.1-alpha01'
+implementation 'com.theapache64.removebg:removebg:1.0.0'
 ```
 
 ### Usage
