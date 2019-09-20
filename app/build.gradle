@@ -33,15 +33,15 @@ dependencies {
 
     // Core
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
 
     // Test
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
 
     // ButterKnife
@@ -52,7 +52,7 @@ dependencies {
     implementation 'com.github.esafirm.android-image-picker:imagepicker:2.0.0'
 
     // Logger
-    implementation 'com.theapache64.twinkill:logger:0.0.1-alpha04'
+    implementation 'com.theapache64.twinkill:logger:1.0.0-alpha02'
 
     // Colors
     implementation 'com.theah64.materialcolors:materialcolors:1.0.0'
