@@ -8,6 +8,9 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        RemoveBg.init("H55t75AyMQF2FkGgsX6Mzb1g")
+        /**
+         * GET YOUR API KEY FROM HERE -> https://www.remove.bg/profile#api-key
+         */
+        RemoveBg.init("YOUR-API-KEY-GOES-HERE")
     }
 }
